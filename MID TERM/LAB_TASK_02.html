@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB TASK 02 - HTML Navigation, Media, and Lists</title>
+</head>
+<body>
+    
+    <!-- Navigation Section -->
+    <header id="header-section" class="main-header">
+        <h1>Web Development Lab Task 02</h1>
+        <nav>
+            <ul>
+                <li><a href="#part-a">Part A: Lists</a></li>
+                <li><a href="#part-b">Part B: Links</a></li>
+                <li><a href="#part-c">Part C: Images</a></li>
+                <li><a href="#part-d">Part D: Global Attributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- PART A: LISTS -->
+    <!-- Create 5 programming language unordered list-->
+    <!-- Create an ordered list showing steps to build a website.-->
+     <!-- Create a description list showing -->
+
+    <section id="part-a" class="content-section">
+        
+        <h2>Part A: Lists</h2>
+
+        <!-- Part A.1: Unordered List of Programming Languages -->
+        <h3>A.1 - Unordered List: Programming Languages</h3>
+     
+        <ul class="programming-list">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>PHP</li>
+        </ul>
+
+        <!-- Part A.2: Ordered List - Steps to Build a Website -->
+        <h3>A.2 - Ordered List: Steps to Build a Website</h3>
+        <ol class="website-steps">
+            <li>Plan and define your website purpose and target audience</li>
+            <li>Create wireframes and design mockups</li>
+            <li>Write HTML structure and content</li>
+            <li>Style with CSS to make it visually appealing</li>
+            <li>Add interactivity with JavaScript</li>
+            <li>Test across different browsers and devices</li>
+            <li>Deploy to a web server</li>
+            <li>Monitor and maintain the website</li>
+        </ol>
+
+        <!-- Part A.3: Description List - Web Technologies -->
+        <h3>A.3 - Description List: Web Technologies</h3>
+        <dl class="tech-definitions">
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language is the standard markup language used to create web pages. It provides the structure and content of web documents.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets is used for styling and layout of web pages. It controls colors, fonts, spacing, and responsive design.</dd>
+            
+            <dt>JavaScript</dt>
+            <dd>JavaScript is a programming language that adds interactivity and dynamic behavior to web pages. It runs in the browser and enables user interactions.</dd>
+        </dl>
+
+    </section>
+
+    <hr>
+
+    <!-- PART B: LINKS -->
+    <section id="part-b" class="content-section">
+        <h2>Part B: Links</h2>
+        
+        <!-- Part B.1 & B.2: Link to University Website (opens in new tab) -->
+        <h3>B.1 & B.2 - University Website Link (Opens in New Tab)</h3>
+        <p>
+            <img src="./LAB_TASK_02_IMAGE/AIUB.png" alt="AIUB Logo" width="1000" height="500" title="AIUB Logo"><br>
+            Click here to visit our university:
+            
+            <a href="https://www.aiub.edu/" target="_blank" class="university-link" title="Visit American International University of Bangladesh">American International University Bangladesh (AIUB)</a>
+        </p>
+
+        <!-- Part B.3: Internal Link (Anchor) -->
+        <h3>B.3 - Internal Anchor Links</h3>
+        <p>Use the navigation links above to jump to different sections of this page.</p>
+        <p>For example, click the links in the header to jump to:</p>
+       
+        <ul>
+            <li><a href="#part-a" class="internal-link">Part A: Lists</a></li>
+            <li><a href="#part-c" class="internal-link">Part C: Images</a></li>
+            <li><a href="#part-d" class="internal-link">Part D: Global Attributes</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- PART C: IMAGES -->
+    <section id="part-c" class="content-section">
+        <h2>Part C: Images</h2>
+        
+        <h3>C.1, C.2, C.3 - Image with Attributes</h3>
+        <p>Below is an example image with proper attributes:</p>
+        
+        <article class="image-container" id="featured-image">
+            <h4>Web Development Illustration</h4>
+            <img 
+                src="./LAB_TASK_02_IMAGE/Lab_Task_O2.png" 
+                alt="Web development concept showing HTML, CSS, and JavaScript working together"
+                width="400"
+                height="300"
+                title="Web Development - HTML, CSS, JavaScript"
+                class="responsive-image"
+            >
+            <p>This image demonstrates the core technologies of web development.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- PART D: GLOBAL ATTRIBUTES -->
+    <section id="part-d" class="content-section">
+        <h2>Part D: Global Attributes on this part explain where where i use ID CLASS and title i use</h2>
+        
+        <h3>D.1 - Demonstrating Global HTML Attributes</h3>
+        
+   
+            <h4>Global Attributes Used in This Page:</h4>
+            
+         
+                <h5>1. ID Attribute</h5>
+                <p>
+                    The <strong>id</strong> attribute uniquely identifies HTML elements. Examples in this page:
+                </p>
+                <ul>
+                    <li><code>id="header-section"</code> - Identifies the header</li>
+                    <li><code>id="part-a"</code> - Used for anchor links to jump to sections</li>
+                    <li><code>id="featured-image"</code> - Identifies the featured image container</li>
+                    <li><code>id="global-attr-demo"</code> - Identifies this section</li>
+                </ul>
+       
+
+           
+                <h5>2. CLASS Attribute</h5>
+                <p>
+                    The <strong>class</strong> attribute allows multiple elements to share the same style. Examples:
+                </p>
+                <ul>
+                    <li><code>class="main-header"</code> - Styles the main header</li>
+                    <li><code>class="content-section"</code> - Styles all major sections</li>
+                    <li><code>class="programming-list"</code> - Styles the programming languages list</li>
+                    <li><code>class="internal-link"</code> - Styles internal navigation links</li>
+                </ul>
+  
+
+   
+                <h5>3. TITLE Attribute</h5>
+                <p>
+                    The <strong>title</strong> attribute provides a tooltip when hovering over elements. Examples:
+                </p>
+                <ul>
+                    <li><code>title="Visit American International University of Bangladesh"</code> - On the AIUB link</li>
+                    <li><code>title="Web Development - HTML, CSS, JavaScript"</code> - On the image</li>
+                    <li><code>title="This section demonstrates HTML global attributes"</code> - On this section</li>
+                </ul>
+ 
+
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- Footer with back to top -->
+    <footer class="page-footer">
+        <p>
+            <a href="#header-section" class="back-to-top" title="Return to top of page">Back to Top</a>
+        </p>
+    </footer>
+
+</body>
+</html>
