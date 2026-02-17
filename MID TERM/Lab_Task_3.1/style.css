@@ -1,0 +1,192 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fffafc;
+  color: #333;
+}
+h1, h2{
+  color: #d63384;
+}
+.box{
+  background: #ffffff;
+}
+.box1{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border: 3px solid #ffb3c6;
+  margin: 10px 0;
+}
+.box2{
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  border: 4px dashed #cdb4db;
+  margin: 18px 0;
+}
+.box3{
+  width: 100%;
+  height: auto;
+  padding: 18px;
+  border: 5px solid #bde0fe;
+  margin: 25px 0;
+}
+.boxDefault{
+  width: 100%;
+  padding: 20px;
+  border: 6px solid #ffd6a5;
+  margin-top: 20px;
+  background: #fff0f6;
+ 
+}
+footer{
+  box-sizing: border-box; 
+}
+
+header, nav, main, footer{
+  display: block;
+}
+
+.inlineDemo{
+  display: inline;
+}
+
+
+.inlineBlockPara{
+  display: inline-block;
+  width: 220px;
+  padding: 10px;
+  margin: 8px 6px 10px 0;
+  border: 2px solid #ffafcc;
+  background: #fff0f6;
+  border-radius: 8px;
+}
+
+
+.noneParagraph{
+  display: none;
+}
+
+
+.hiddenDemo{
+  visibility: hidden; 
+}
+
+.noneDemo{
+  display: none; 
+}
+
+.boxModelSection{
+  margin-top: 10px;
+}
+
+.demoBox{
+  background: #ffffff;
+  border: 2px solid #ffafcc;
+  margin: 12px 0;
+  padding: 12px;
+}
+
+.boxA{
+  width: 240px;
+  height: 80px;
+  border: 3px solid #ffb3c6;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.boxB{
+  width: 240px;
+  height: 80px;
+  border: 4px dashed #cdb4db;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.boxC{
+  width: 260px;
+  height: 90px;
+  border: 5px solid #bde0fe;
+  padding: 18px;
+  margin: 18px 0;
+}
+
+.boxSizingBorder{
+  box-sizing: border-box;
+}
+
+.displaySection{
+  margin-top: 10px;
+}
+
+.displayBlock{
+  display: block;
+  margin: 6px 0;
+  padding: 6px 10px;
+  border: 1px solid #e5e5e5;
+  background: #f8f9fa;
+}
+
+.displayInline{
+  display: inline;
+  padding: 4px 8px;
+  border: 1px solid #e5e5e5;
+  background: #f8f9fa;
+}
+
+.displayInlineBlock{
+  display: inline-block;
+  width: 160px;
+  padding: 6px 10px;
+  margin: 4px 6px 6px 0;
+  border: 1px solid #e5e5e5;
+  background: #f8f9fa;
+}
+
+.displayNone{
+  display: none;
+}
+
+.tag{
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: #f8f9fa;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.tableSection{
+  margin-top: 10px;
+}
+
+.studentTable{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.studentTable caption{
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #6f42c1;
+}
+
+.studentTable th{
+  background: #ffe5ec;
+  padding: 10px;
+}
+
+.studentTable td{
+  padding: 10px;
+}
+
+.navLink{
+  color: #d63384;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navLink:hover{
+  text-decoration: underline;
+}

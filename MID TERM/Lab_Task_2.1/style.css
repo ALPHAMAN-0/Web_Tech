@@ -1,0 +1,139 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 2vh;
+  background-color: #fffafc; 
+  color: #444; 
+}
+
+
+h1, h2 {
+  margin-bottom: 10px;
+  color: #d63384; 
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+
+h3 {
+  color: #6f42c1; 
+}
+
+.pl-list {
+  width: 60%;
+  padding: 12px;
+}
+
+
+ul li:first-child {
+  color: #20c997; 
+  font-weight: bold;
+}
+
+
+ol li:last-child {
+  color: #0d6efd; 
+}
+
+
+dt {
+  color: #fd7e14; 
+  font-weight: bold;
+}
+
+
+dd {
+  color: #555;
+}
+
+
+.noteBox {
+  border: 1mm solid #f8bbd0;
+  padding: 10px;
+  width: 70%;
+  margin: 12px 0;
+  background-color: #fff0f6; 
+}
+
+div p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+
+input[type="text"] {
+  width: 40vw;
+  padding: 10px;
+  font-size: 1em;
+  margin: 8px 0;
+  border: 1px solid #ffc0cb;
+  border-radius: 6px;
+}
+
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #d63384;
+  box-shadow: 0 0 5px rgba(214, 51, 132, 0.3);
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+
+button:active {
+  transform: scale(0.97);
+}
+
+
+a {
+  color: #d63384;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9c36b5;
+}
+
+a:hover {
+  color: #ff4d6d;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff922b;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+img:hover {
+  width: 55%;
+}
