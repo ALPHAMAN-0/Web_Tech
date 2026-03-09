@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+
+        <!-- Add Student Form -->
+        <div class="form-section">
+            <h2>Add Student</h2>
+            <div class="input-group">
+                <input type="text" id="rollInput" placeholder="Roll No.">
+                <input type="text" id="nameInput" placeholder="Student Name">
+                <button id="addBtn" disabled>Add</button>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="sortBtn">Sort A&ndash;Z</button>
+            <button id="highlightBtn">Highlight First Student</button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search student by name...">
+        </div>
+
+        <!-- Student List -->
+        <ul id="studentList"></ul>
+
+        <!-- Stats -->
+        <div class="stats">
+            <p id="totalCount">Total students: 0</p>
+            <p id="attendanceStats">Present: 0, Absent: 0</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
