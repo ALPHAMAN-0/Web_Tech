@@ -54,8 +54,8 @@ document.write("<h3>Part D: Array of Objects</h3>");
 
 let students = [
 	{ name: "Siam Ahmed", id: "24-56637-1", department: "CSE", cgpa: 2.01 },
-	{ name: "Sumaiya motu", id: "23-55555-1", department: "CSE", cgpa: 2.00 },
-	{ name: "Muhammad Hossain", id: "000-0000-000", department: "CSE", cgpa: 3.68 }
+	{ name: "Sumaiya ", id: "23-55555-1", department: "CSE", cgpa: 2.00 },
+	{ name: "Muhammad Ali", id: "000-0000-000", department: "CSE", cgpa: 3.68 }
 ];
 
 for (let i = 0; i < students.length; i++) {
