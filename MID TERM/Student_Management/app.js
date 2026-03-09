@@ -8,6 +8,33 @@ var attendanceStats = document.getElementById("attendanceStats");
 var searchInput = document.getElementById("searchInput");
 var sortBtn = document.getElementById("sortBtn");
 var highlightBtn = document.getElementById("highlightBtn");
+var themeToggleBtn = document.getElementById("themeToggleBtn");
+
+var THEME_STORAGE_KEY = "studentManagementTheme";
+
+function setTheme(mode) {
+    var isDark = mode === "dark";
+    document.body.classList.toggle("dark-mode", isDark);
+    themeToggleBtn.textContent = isDark ? "Light Mode" : "Dark Mode";
+}
+
+function initializeTheme() {
+    var savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+    if (savedTheme === "dark" || savedTheme === "light") {
+        setTheme(savedTheme);
+    } else {
+        setTheme("light");
+    }
+}
+
+themeToggleBtn.addEventListener("click", function () {
+    var isDark = document.body.classList.contains("dark-mode");
+    var newTheme = isDark ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem(THEME_STORAGE_KEY, newTheme);
+});
+
+initializeTheme();
 
 
 // Feature 3: Disable "Add" when input is empty

@@ -4,30 +4,92 @@
     box-sizing: border-box;
 }
 
+:root {
+    --body-bg: #f0f2f5;
+    --container-bg: #fff;
+    --text-main: #333;
+    --text-sub: #555;
+    --input-bg: #fff;
+    --input-border: #ddd;
+    --border-soft: #eee;
+    --student-item-bg: #fafafa;
+    --student-item-border: #e8e8e8;
+    --stats-text: #666;
+    --button-primary: #4a90d9;
+    --button-primary-hover: #357abd;
+    --present-bg: #e6f9e6;
+    --present-border: #7bc67b;
+    --highlight-bg: #fff3cd;
+    --highlight-border: #f0ad4e;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    --body-bg: #101317;
+    --container-bg: #1b222b;
+    --text-main: #e8edf3;
+    --text-sub: #bdc7d3;
+    --input-bg: #131922;
+    --input-border: #33404f;
+    --border-soft: #2a3440;
+    --student-item-bg: #141b24;
+    --student-item-border: #2f3a47;
+    --stats-text: #a8b5c5;
+    --button-primary: #5a9ce0;
+    --button-primary-hover: #4a8dd1;
+    --present-bg: #213628;
+    --present-border: #4a8358;
+    --highlight-bg: #4d3f1c;
+    --highlight-border: #d79e36;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: var(--body-bg);
     padding: 20px;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--container-bg);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
+}
+
+.theme-toggle-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+#themeToggleBtn {
+    padding: 8px 14px;
+    border: 2px solid var(--button-primary);
+    background: transparent;
+    color: var(--button-primary);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#themeToggleBtn:hover {
+    background: var(--button-primary);
+    color: #fff;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: var(--text-main);
     margin-bottom: 24px;
     font-size: 1.6rem;
 }
 
 h2 {
-    color: #555;
+    color: var(--text-sub);
     font-size: 1.1rem;
     margin-bottom: 12px;
 }
@@ -45,7 +107,9 @@ h2 {
 .input-group input {
     flex: 1;
     padding: 10px 12px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--text-main);
     border-radius: 6px;
     font-size: 0.95rem;
     outline: none;
@@ -62,7 +126,7 @@ h2 {
 
 .input-group button {
     padding: 10px 20px;
-    background-color: #4a90d9;
+    background-color: var(--button-primary);
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -72,7 +136,7 @@ h2 {
 }
 
 .input-group button:hover:not(:disabled) {
-    background-color: #357abd;
+    background-color: var(--button-primary-hover);
 }
 
 .input-group button:disabled {
@@ -89,9 +153,9 @@ h2 {
 
 .action-buttons button {
     padding: 8px 16px;
-    border: 2px solid #4a90d9;
-    background: #fff;
-    color: #4a90d9;
+    border: 2px solid var(--button-primary);
+    background: var(--input-bg);
+    color: var(--button-primary);
     border-radius: 6px;
     font-size: 0.9rem;
     cursor: pointer;
@@ -99,7 +163,7 @@ h2 {
 }
 
 .action-buttons button:hover {
-    background: #4a90d9;
+    background: var(--button-primary);
     color: #fff;
 }
 
@@ -111,7 +175,9 @@ h2 {
 .search-section input {
     width: 100%;
     padding: 10px 12px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--input-border);
+    background: var(--input-bg);
+    color: var(--text-main);
     border-radius: 6px;
     font-size: 0.95rem;
     outline: none;
@@ -133,21 +199,21 @@ h2 {
     align-items: center;
     justify-content: space-between;
     padding: 12px 14px;
-    border: 2px solid #e8e8e8;
+    border: 2px solid var(--student-item-border);
     border-radius: 8px;
     margin-bottom: 8px;
-    background: #fafafa;
+    background: var(--student-item-bg);
     transition: background-color 0.2s, border-color 0.2s;
 }
 
 #studentList li.present {
-    background-color: #e6f9e6;
-    border-color: #7bc67b;
+    background-color: var(--present-bg);
+    border-color: var(--present-border);
 }
 
 #studentList li.highlighted {
-    background-color: #fff3cd;
-    border-color: #f0ad4e;
+    background-color: var(--highlight-bg);
+    border-color: var(--highlight-border);
     border-width: 3px;
     font-weight: bold;
 }
@@ -155,7 +221,7 @@ h2 {
 .student-info {
     flex: 1;
     font-size: 0.95rem;
-    color: #333;
+    color: var(--text-main);
 }
 
 .student-actions {
@@ -200,7 +266,9 @@ h2 {
 /* Edit mode inputs inside list items */
 .edit-input {
     padding: 4px 8px;
-    border: 1px solid #4a90d9;
+    border: 1px solid var(--button-primary);
+    background: var(--input-bg);
+    color: var(--text-main);
     border-radius: 4px;
     font-size: 0.9rem;
     outline: none;
@@ -223,12 +291,12 @@ h2 {
 
 /* Stats */
 .stats {
-    border-top: 2px solid #eee;
+    border-top: 2px solid var(--border-soft);
     padding-top: 12px;
 }
 
 .stats p {
-    color: #666;
+    color: var(--stats-text);
     font-size: 0.95rem;
     margin-bottom: 4px;
 }
