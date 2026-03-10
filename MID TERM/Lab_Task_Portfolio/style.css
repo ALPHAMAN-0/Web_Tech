@@ -111,6 +111,25 @@ body.dark-mode .nav-links a.active-link {
     color: #fff;
 }
 
+.whatsapp-btn {
+    display: inline-block;
+    background: none;
+    border: 2px solid #25D366;
+    color: #25D366;
+    font-size: 1.3rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #25D366;
+    color: #fff;
+}
+
 .menu-btn {
     display: none;
     background: none;
