@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <!-- Navigation -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                
+                <a href="#" class="logo">SIAM HOSSAIN</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active-link">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button id="theme-toggle" title="Toggle Dark/Light Mode">&#9788;</button>
+                <button class="menu-btn" id="menu-btn">&#9776;</button>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section id="home" class="hero-section">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <p class="greeting">Hello.</p>
+                    <p class="greeting-sub">I'm <span class="highlight">Siam</span></p>
+                    
+                    <h1 id="tagline"></h1> 
+
+                    <p class="intro">A passionate web developer and Computer Science student who loves building 
+                        things for the web. I enjoy turning ideas into clean code.</p>
+                    
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">My Projects</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    
+                    <!-- Skill bars -->
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">CSS</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 65%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">Python</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 55%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">Git</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">C++</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">Python</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">Prompt Engineering</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div>
+                        </div>
+                        
+                        <div class="skill-bar-item">
+                            <span class="skill-name">System Design Concepts</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <span class="skill-name">Meachine Learning</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-glow"></div>
+                    <img src="Image/SIAM02.jpeg" alt="Siam - Profile Picture" class="profile-pic">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-services">
+                        <div class="service-item" data-service="web-dev">
+                            <span class="service-icon">&#9998;</span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="service-item" data-service="problem-solving">
+                            <span class="service-icon">&#9881;</span>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="service-item" data-service="ui-design">
+                            <span class="service-icon">&#128187;</span>
+                            <span>UI Design</span>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a Computer Science & Engineering student with a strong interest in web technologies. 
+                            I started learning HTML and CSS in my early semesters, and since then I have been 
+                            exploring JavaScript and modern web development practices.</p>
+                        <p>When I'm not coding, you can find me reading tech blogs, playing games, 
+                            or experimenting with new tools and technologies.</p>
+                        
+                        <!-- Service Details Panel -->
+                        <div class="service-details-panel" id="service-details-panel">
+                            
+                            <div class="service-detail" id="detail-web-dev" style="display: none;">
+                                <h3>Web Development</h3>
+                                <p>Creating beautiful and functional websites using modern web technologies.</p>
+                            </div>
+
+                            <div class="service-detail" id="detail-problem-solving" style="display: none;">
+                                <h3>Problem Solving Online Judges</h3>
+
+                                <div class="ps-websites">
+                                    <a href="https://leetcode.com/u/RedApple47/" target="_blank" class="ps-website-item">
+                                        <img src="Image/LeetCode.png" alt="LeetCode" class="ps-website-logo">
+                                        <span class="ps-website-name">LeetCode</span>
+                                    </a>
+                                </div>
+
+                                 <div class="ps-websites">
+                                    <a href="https://codeforces.com/profile/SIAM001" target="_blank" class="ps-website-item">
+                                        <img src="Image/CodeForces.png" alt="CodeForces" class="ps-website-logo">
+                                        <span class="ps-website-name">CodeForces</span>
+                                    </a>
+                                </div>
+
+
+                                <div class="ps-websites">
+                                    <a href="https://www.hackerrank.com/profile/BaBaYaGa_A1" target="_blank" class="ps-website-item">
+                                        <img src="Image/HackerRank.png" alt="HackerRank" class="ps-website-logo">
+                                        <span class="ps-website-name">HackerRank</span>
+                                    </a>
+                                </div>
+
+                                <div class="ps-websites">
+                                    <a href="https://judge.beecrowd.com/en/profile/896961" target="_blank" class="ps-website-item">
+                                        <img src="Image/BeeCrowd.png" alt="BeeCrowd" class="ps-website-logo">
+                                        <span class="ps-website-name">BeeCrowd</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="service-detail" id="detail-ui-design" style="display: none;">
+                                <h3>UI Design</h3>
+                                <p>Designing intuitive and beautiful user interfaces that users love.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat-box">
+                                <h3>10+</h3>
+                                <p>Completed Projects</p>
+                            </div>
+            
+                            <div class="stat-box">
+                                <h3>95%</h3>
+                                <p>Dedication</p>
+                            </div>
+
+                            <div class="stat-box">
+                                <h3>2+</h3>
+                                <p>Years Learning</p>
+                            </div>
+
+                             <div class="stat-box">
+                                <h3>3500+</h3>
+                                <p>Problem Solve</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (rendered dynamically by JS) -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-grid" id="project-grid">
+                    <!-- Project cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section This section dose not working for my teacher tell me you can not use Any framework or libary 🥹 -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">Have a question or want to work together? Feel free to reach!</p>
+                <form id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                            <span class="error-msg" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                            <span class="error-msg" id="email-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <span class="error-msg" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                        <span class="error-msg" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    <p id="form-success" class="success-msg"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Siam. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/ALPHAMAN-0">GitHub</a>
+                <a href="https://www.linkedin.com/in/siamhossain4/">LinkedIn</a>
+                <a href="mailto:siam.cse.aiub@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" title="Back to Top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
