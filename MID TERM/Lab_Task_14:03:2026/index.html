@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-area {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        button {
+            padding: 8px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Participant Registration</h2>
+
+    <div class="form-area">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="text" id="age" placeholder="Enter Age">
+        <br><br>
+        <button onclick="addParticipant()">Submit</button>
+    </div>
+
+    <table id="participantTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+    <script>
+        function addParticipant() {
+            var pName = document.getElementById("name").value;
+            var pAge = document.getElementById("age").value;
+
+            // validate name - only letters allowed
+            if (pName == "" || !pName.match(/^[a-zA-Z]+$/)) {
+                alert("Please enter a valid name (only letters, no spaces or numbers).");
+                return;
+            }
+
+            // validate age - must be number between 18 and 100
+            var ageNum = parseInt(pAge);
+            if (isNaN(ageNum) || ageNum < 18 || ageNum > 100) {
+                alert("Please enter a valid age (18 to 100).");
+                return;
+            }
+
+            var table = document.getElementById("participantTable");
+            var row = table.insertRow(-1);
+
+            // set row color based on age
+            if (ageNum < 30) {
+                row.style.backgroundColor = "lightblue";
+            } else {
+                row.style.backgroundColor = "lightyellow";
+            }
+
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = pName;
+            cell2.innerHTML = ageNum;
+
+            // clear input fields after adding
+            document.getElementById("name").value = "";
+            document.getElementById("age").value = "";
+        }
+    </script>
+
+</body>
+</html>
