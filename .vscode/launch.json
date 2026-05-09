@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run PHP (serve + open)",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:8000/from%20Validation.php",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "php: serve"
+    }
+  ]
+}
