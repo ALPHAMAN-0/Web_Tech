@@ -1,7 +1,7 @@
 <?php
 
 
-require_once __DIR__ . '/../models/BookModel.php';
+require_once __DIR__ . '/../Model/BookModel.php';
 
 function handleRequest($action, $data) {
 

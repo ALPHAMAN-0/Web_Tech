@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Library Management System</title>
 
-    <!-- =====================================================
-         VIEW LAYER  —  index.php
-         All UI lives here. No PHP logic, no DB queries.
-         AJAX handles all communication with the server.
-    ====================================================== -->
 
     <style>
         /* ── Reset & Base ─────────────────────────────────── */
@@ -314,8 +309,6 @@ function loadBooks() {
             }
 
             const books = data.books;
-
-            // Update stats
             document.getElementById('stat-total').textContent =
                 books.length;
             document.getElementById('stat-available').textContent =
@@ -330,7 +323,6 @@ function loadBooks() {
                 return;
             }
 
-            // Build table rows
             tbody.innerHTML = books.map((book, index) => `
                 <tr>
                     <td>${index + 1}</td>

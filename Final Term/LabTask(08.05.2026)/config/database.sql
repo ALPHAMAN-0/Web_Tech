@@ -1,8 +1,3 @@
--- ============================================================
--- database.sql  —  Run this ONCE to set up the database
--- Open phpMyAdmin or MySQL terminal and run these commands
--- ============================================================
-
 -- Step 1: Create the database
 CREATE DATABASE IF NOT EXISTS library_db;
 

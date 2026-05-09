@@ -1,1 +1,27 @@
 
+# Local Docker overrides
+.env
+.env.*
+docker-compose.override.yml
+docker-compose.*.yml
+
+# Docker project files anywhere in the repo
+**/Dockerfile
+**/Dockerfile.*
+**/.dockerignore
+**/docker-compose.yml
+**/docker-compose.yaml
+**/compose.yml
+**/compose.yaml
+**/compose.*.yml
+
+# Docker runtime / data
+db_data/
+mysql-data/
+docker-data/
+
+# Optional local Docker logs
+*.docker.log
+docker-*.log
+
+
