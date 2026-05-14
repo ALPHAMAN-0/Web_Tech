@@ -260,14 +260,8 @@
 </div><!-- /container -->
 
 
-<!-- =====================================================
-     AJAX JAVASCRIPT  —  All server communication is here
-     fetch() sends requests to ajax_handler.php
-     and updates the page without refreshing.
-====================================================== -->
 <script>
 
-// ── Utility: Show toast message ────────────────────────────
 function showToast(message, type = 'success') {
     const toast = document.getElementById('toast');
     toast.textContent = message;
@@ -293,9 +287,6 @@ function cancelEdit() {
     resetForm();
 }
 
-// ──────────────────────────────────────────────────────────
-// READ — Load all books via AJAX (GET)
-// ──────────────────────────────────────────────────────────
 function loadBooks() {
     fetch('ajax_handler.php?action=getAll')
         .then(response => response.json())
@@ -349,9 +340,6 @@ function loadBooks() {
         });
 }
 
-// ──────────────────────────────────────────────────────────
-// CREATE or UPDATE — Submit form via AJAX (POST)
-// ──────────────────────────────────────────────────────────
 function submitForm() {
     const id       = document.getElementById('edit-id').value;
     const title    = document.getElementById('title').value.trim();
