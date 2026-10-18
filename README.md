@@ -7,12 +7,13 @@ Course Teacher Name
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[Web Tech]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    MID_TERM --> MID_TERM_Exercises
+    MID_TERM --> MID_TERM_Portfolio
+    MID_TERM --> MID_TERM_Student_Management
+    Final_Term --> FinalTerm_PHP_Basics
+    Final_Term --> FinalTerm_Session_Demo
+    Final_Term --> FinalTerm_Book_MVC
 ```
 
 
